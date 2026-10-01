@@ -38,7 +38,3 @@ Open a notebook and run its cells from top to bottom. The experiments download C
 ## Dependencies
 
 The notebooks use NumPy, Pandas, Matplotlib, scikit-learn, PyTorch, torchvision, TensorFlow/Keras, and Hugging Face Datasets. See [requirements.txt](requirements.txt). Library and hardware compatibility should be checked in the environment where the notebooks are run.
-
-## Project origin
-
-This repository is an independent presentation of [Shreyansh912/Machine_Learning](https://github.com/Shreyansh912/Machine_Learning), adapted with permission. The initial adaptation gives the repository an accurate name, corrected notebook filenames, a clean Git history, dependency list, and documentation. The notebook implementations and results remain available for a later improvement and reproducibility review.

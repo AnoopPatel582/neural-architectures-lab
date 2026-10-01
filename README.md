@@ -15,13 +15,13 @@ The notebooks are independent. Their numbered names reflect the topics found in 
 
 ## Fast verification
 
-After installing NumPy, run the dataset-free checks:
+After installing the dependencies in `requirements.txt`, run the dataset-free checks:
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-They validate every code cell's syntax, compare the NumPy CNN's convolution and pooling outputs with known values, and check its forward-pass shapes and probabilities. A small synthetic-data test also runs one training epoch for the NumPy RNN, LSTM, and coupled LSTM. These checks do not reproduce the notebooks' saved experimental results.
+They validate every code cell's syntax, compare the NumPy CNN's convolution and pooling outputs with known values, and check its forward-pass shapes and probabilities. Small synthetic-data tests run one training epoch for the NumPy RNN and LSTM variants, check the NumPy Transformer's attention and classifier, and train and evaluate all four long-context models. These checks do not reproduce the notebooks' saved experimental results.
 
 ## Run locally
 
@@ -33,7 +33,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m notebook
 ```
 
-Open a notebook and run its cells from top to bottom. The experiments download CIFAR-10, IMDb, or WikiText-2 when needed. Training and dataset downloads can take substantial time and may benefit from a GPU. The notebooks include saved outputs from the source project; their full training runs have **not** been independently reproduced in this adaptation.
+Open a notebook and run its cells from top to bottom. The experiments download CIFAR-10, IMDb, or WikiText-2 when needed. Notebook 04 uses the Hugging Face dataset IDs `stanfordnlp/imdb` and `Salesforce/wikitext`. Training and dataset downloads can take substantial time and may benefit from a GPU. The notebooks include saved outputs from the source project; their full training runs have **not** been independently reproduced in this adaptation.
 
 ## Dependencies
 

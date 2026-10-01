@@ -21,7 +21,7 @@ After installing NumPy, run the dataset-free checks:
 python -m unittest discover -s tests -v
 ```
 
-They validate the syntax of every code cell and compare the NumPy CNN's convolution and pooling outputs with known values. They also check the complete NumPy forward pass's tensor shapes and probability output. The checks do not run model training or validate the saved experimental results.
+They validate every code cell's syntax, compare the NumPy CNN's convolution and pooling outputs with known values, and check its forward-pass shapes and probabilities. A small synthetic-data test also runs one training epoch for the NumPy RNN, LSTM, and coupled LSTM. These checks do not reproduce the notebooks' saved experimental results.
 
 ## Run locally
 

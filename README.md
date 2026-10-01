@@ -13,6 +13,16 @@ Four Jupyter notebooks exploring neural network architectures for image classifi
 
 The notebooks are independent. Their numbered names reflect the topics found in the files; the source repository's filenames did not match several notebook contents.
 
+## Fast verification
+
+After installing NumPy, run the dataset-free checks:
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+They validate the syntax of every code cell and compare the NumPy CNN's convolution and pooling outputs with known values. They also check the complete NumPy forward pass's tensor shapes and probability output. The checks do not run model training or validate the saved experimental results.
+
 ## Run locally
 
 Install Python, create an environment, then install the dependencies:
